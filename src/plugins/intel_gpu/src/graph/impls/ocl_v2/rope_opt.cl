@@ -388,7 +388,8 @@ uint cos_sin_p = p;
     uint sin_idx = INPUT2_GET_INDEX(cos_sin_p, 0, 0, 0);
 #endif
 #else
-#   error "rope_opt.cl - 4 or 2 of INPUT1_DIMS/INPUT2_DIMS is supported only"
+    uint cos_idx = 0;
+    uint sin_idx = 0;
 #endif
 
     uint output_idx = OUTPUT_GET_INDEX(b, h, p, 0);
